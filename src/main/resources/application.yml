@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: vnpay-payment
+
+server:
+  port: 8092
+  servlet:
+    context-path: /vnp-gateway
