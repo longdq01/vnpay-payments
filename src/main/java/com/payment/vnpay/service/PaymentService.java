@@ -46,7 +46,7 @@ public class PaymentService {
                 || entry.getValue().getFirst().isEmpty());
         queryParams.add(ParameterConstant.VNP_SECURE_HASH, Utils.signDataCreatePayment(queryParams, config.getVnpHashSecret()));
 
-        String paymentUrl = UriComponentsBuilder.fromPath(config.getVnpUrl())
+        String paymentUrl = UriComponentsBuilder.fromUriString(config.getVnpUrl())
                 .queryParams(queryParams)
                 .toUriString();
         log.info("Create payment send to vnpay successfully with payment url: {}", paymentUrl);
