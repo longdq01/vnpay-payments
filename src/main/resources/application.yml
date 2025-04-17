@@ -6,3 +6,8 @@ server:
   port: 8092
   servlet:
     context-path: /vnp-gateway
+
+vnp_TmnCode:
+vnp_HashSecret:
+vnp_Url:
+vnp_ReturnUrl:
